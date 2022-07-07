@@ -10,7 +10,7 @@ int main(void)
 	char text[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 
 	int i;
-	
+
 	i = 0;
 
 	while (i < 8)

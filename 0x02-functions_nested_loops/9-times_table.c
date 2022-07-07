@@ -31,5 +31,7 @@ void times_table(void)
 			if (mul + i < 10)
 				_putchar(32);
 		}
+		if (i != 9)
+			_putchar(10);
 	}
 }

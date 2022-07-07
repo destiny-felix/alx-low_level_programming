@@ -5,7 +5,7 @@
  */
 void times_table(void)
 {
-	int i, j, k, l, mul;
+	int i, j, mul;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -13,25 +13,23 @@ void times_table(void)
 		{
 			mul = i * j;
 
-			if (mul < 10)
+			if (j == 0)
 				_putchar('0' + mul);
-			else
+			if (mul < 10 && j != 0)
 			{
-				k = mul / 10;
-				l = mul % 10;
-
-				_putchar('0' + k);
-				_putchar('0' + l);
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(mul + '0');
 			}
-			if (j != 9)
+			else if (k > 10)
 			{
-				_putchar(44);
-				_putchar(32);
+				_putchar(',');
+				_putchar(' ');
+				_putchar((mul / 10) + '0');
+				_putchar((mul % 10) + '0');
 			}
-			if (mul + i < 10)
-				_putchar(32);
 		}
-		if (i != 9)
-			_putchar(10);
+		_putchar(10);
 	}
 }

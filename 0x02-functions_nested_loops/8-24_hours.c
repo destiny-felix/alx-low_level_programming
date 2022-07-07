@@ -24,6 +24,7 @@ void jack_bauer(void)
 				_putchar('0' + k);
 				_putchar('0' + l);
 			}
+			_putchar(58);
 			if (j < 10)
 			{
 				_putchar(48);

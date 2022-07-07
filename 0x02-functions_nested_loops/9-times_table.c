@@ -26,14 +26,10 @@ void times_table(void)
 			if (j != 9)
 			{
 				_putchar(44);
-				if (mul < 10)
-				{
-					_putchar(32);
-					_putchar(32);
-				}
-				else
-					_putchar(32);
+				_putchar(32);
 			}
+			if (j + i < 10)
+				putchar(32);
 		}
 		_putchar(10);
 	}

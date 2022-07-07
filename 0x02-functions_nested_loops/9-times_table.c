@@ -29,7 +29,7 @@ void times_table(void)
 				_putchar(32);
 			}
 			if (j + i < 10)
-				putchar(32);
+				_putchar(32);
 		}
 		_putchar(10);
 	}

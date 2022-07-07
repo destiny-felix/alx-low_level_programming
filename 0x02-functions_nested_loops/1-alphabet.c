@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - Entry point
- * Return: 0 (success)
+ * print_alphabet - print alphabet
+ * Return: print alphabet
  */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 
@@ -14,6 +14,5 @@ int main(void)
 		_putchar(i);
 		i++;
 	}
-	_putchar('\n');
-	return (0);
+	putchar('\n');
 }

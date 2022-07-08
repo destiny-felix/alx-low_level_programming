@@ -18,19 +18,19 @@ void print_times_table(int n)
 				mul = i * j;
 
 				if (j == 0)
-					printf("%d,   ", j);
+					printf("%d", j);
 
 				if (mul < 10 && j != 0)
 				{
 					printf(",   ");
 					printf("%d", mul);
 				}
-				else if (mul >= 10 && j < n)
+				else if (mul >= 10 && mul < 100)
 				{
 					printf(",  ");
 					printf("%d", mul);
 				}
-				else if (mul >= 100 && j < n)
+				else if (mul >= 100)
 				{
 					printf(", ");
 					printf("%d", mul);

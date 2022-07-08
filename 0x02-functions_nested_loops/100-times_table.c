@@ -17,14 +17,24 @@ void print_times_table(int n)
 			{
 				mul = i * j;
 
-				printf("%d", mul);
+				if (j == 0)
+					printf("%d,   ", j);
 
-				if (mul < 10 && j < n)
+				if (mul < 10 && j != 0)
+				{
 					printf(",   ");
+					printf("%d", mul);
+				}
 				else if (mul >= 10 && j < n)
+				{
 					printf(",  ");
+					printf("%d", mul);
+				}
 				else if (mul >= 100 && j < n)
+				{
 					printf(", ");
+					printf("%d", mul);
+				}
 			}
 			printf("\n");
 		}

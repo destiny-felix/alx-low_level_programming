@@ -18,6 +18,6 @@ int main(void)
 		}
 		divisor += 1;
 	}
-	printf("%ld", large_num);
+	printf("%ld\n", large_num);
 	return (0);
 }

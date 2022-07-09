@@ -24,7 +24,7 @@ void print_number(int n)
 			aux *= 10;
 			num /= 10;
 		}
-		for (int i = aux; aux >= 1; i /= 10)
+		for (int i = aux; i >= 1; i /= 10)
 			_putchar((num2 / i) % 10 + '0');
 	}
 	else

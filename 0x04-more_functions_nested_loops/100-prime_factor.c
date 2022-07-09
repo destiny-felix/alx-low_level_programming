@@ -9,7 +9,7 @@ int main(void)
 	long divisor = 2;
 	long large_num = 0;
 
-	while (num != 0)
+	while (num != 1)
 	{
 		if (num % divisor == 0)
 		{

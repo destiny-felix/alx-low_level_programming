@@ -5,8 +5,9 @@
  */
 int main(void)
 {
-	long prime_num = 612852475143;
+	long num = 612852475143;
 	long divisor = 2;
+	long large_num = 0;
 
 	while (num != 0)
 	{
@@ -17,5 +18,6 @@ int main(void)
 		}
 		divisor += 1;
 	}
+	printf("%ld", large_num);
 	return (0);
 }

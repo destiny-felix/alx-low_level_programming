@@ -1,12 +1,13 @@
 #include "main.h"
 /**
  * print_number - print_number
+ * @n: n
  * Return: void
  */
 void print_number(int n)
 {
 	unsigned int num, num2;
-	
+
 	int aux;
 
 	if (n < 0)

@@ -20,12 +20,19 @@ int _strlen(char *s)
  */
 void print_rev(char *s)
 {
-	int num = _strlen(s) - 1;
+	int i = _strlen(s) - 1, j = 0, x = 0;
 
-	while (num >= 0)
+	char str[i];
+
+	while (i >= 0)
 	{
-		_putchar(*(s + num));
-		num--;
+		str[j] = s[i];
+		i--;
+		j++;
 	}
-	_putchar(10);
+	while (x <= i)
+	{
+		s[x] = str[x];
+		x++;
+	}
 }

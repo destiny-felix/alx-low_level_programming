@@ -32,7 +32,7 @@ void rev_string(char *s)
 
 		c = *end;
 		*end = *start;
-		*start = *c;
+		*start = c;
 
 		/* Update the position */
 		start++;

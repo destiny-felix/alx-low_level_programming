@@ -22,9 +22,21 @@ void rev_string(char *s)
 {
 	int num = _strlen(s) - 1;
 
-	while (num >= 0)
+	char *start, *end;
+
+	for (int i = 0; i <= num; i++)
+		end++;
+	int j = 0;
+
+	for (; j < num / 2; j++)
 	{
-		_putchar(*(s + num));
-		num--;
+		char *c;
+		c = end;
+		end = start;
+		start = c;
+
+		/* Update the position */
+		start++;
+		end--;
 	}
 }

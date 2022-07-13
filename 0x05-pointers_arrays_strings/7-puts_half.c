@@ -10,7 +10,7 @@ int _strlen(char *s)
 
 	i = 0;
 
-	while (s[i])
+	while (s[i] != '\0')
 		i++;
 	return (i);
 }
@@ -28,7 +28,6 @@ void puts_half(char *str)
 	for (i = half; str[i]; i++)
 	{
 		_putchar(str[i]);
-		i++;
 	}
 	_putchar(10);
 }

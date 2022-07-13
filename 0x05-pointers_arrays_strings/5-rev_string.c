@@ -20,17 +20,17 @@ int _strlen(char *s)
  */
 void rev_string(char *s)
 {
-	int num = _strlen(s) - 1;
+	int num = _strlen(s) - 1, i, j;
 
 	char *start, *end;
 
-	for (int i = 0; i <= num; i++)
+	for (i = 0; i <= num; i++)
 		end++;
-	int j = 0;
 
-	for (; j < num / 2; j++)
+	for (j = 0; j < num / 2; j++)
 	{
 		char *c;
+
 		c = end;
 		end = start;
 		start = c;

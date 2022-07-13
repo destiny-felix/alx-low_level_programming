@@ -23,28 +23,12 @@ void puts_half(char *str)
 {
 	int count = _strlen(str), half, i;
 
-	if (count % 2 == 0)
+	half = (count + 1) / 2;
+
+	for (i = half; str[i]; i++)
 	{
-		half = count / 2;
-		i = 0;
-		while (str[i])
-		{
-			if (i >= half)
-				_putchar(str[i]);
-			i++;
-		}
-	}
-	else
-	{
-		count -= 1;
-		half = count / 2;
-		i = 0;
-		while (str[i])
-		{
-			if (i >= half)
-				_putchar(str[i]);
-			i++;
-		}
+		_putchar(str[i]);
+		i++;
 	}
 	_putchar(10);
 }

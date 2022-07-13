@@ -22,14 +22,13 @@ void rev_string(char *s)
 {
 	int num = _strlen(s) - 1, i, j;
 
-	char *start, *end;
+	char *start, *end, c;
 
 	for (i = 0; i < num; i++)
 		end++;
 
 	for (j = 0; j < num / 2; j++)
 	{
-		char *c;
 
 		c = *end;
 		*end = *start;

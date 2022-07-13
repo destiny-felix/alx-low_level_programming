@@ -24,16 +24,16 @@ void rev_string(char *s)
 
 	char *start, *end;
 
-	for (i = 0; i <= num; i++)
+	for (i = 0; i < num; i++)
 		end++;
 
 	for (j = 0; j < num / 2; j++)
 	{
 		char *c;
 
-		c = end;
-		end = start;
-		start = c;
+		c = *end;
+		*end = *start;
+		*start = *c;
 
 		/* Update the position */
 		start++;

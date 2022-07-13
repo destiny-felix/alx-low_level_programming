@@ -15,7 +15,9 @@ int isnumeric(unsigned int s)
  */
 int _atoi(char *s)
 {
-	int number, sign, i;
+	unsigned int number, i;
+
+	int sign;
 
 	number = 0;
 	sign = 1;
